@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VK.COM</title>
+    <style>
+		body{
+			margin: 0;
+		}
+        .header{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            background-color: #4277a5;
+            
+        }
+        .header_img{
+            
+            color: white;
+            font-size: x-large;
+            font-weight:bold;
+            margin-left: 200px;
+        
+
+        }
+        .header_search{
+            
+            margin-left: 100px;
+        
+        }
+        .header_search input{
+            
+            background-color: #2c4869;
+        
+        }
+
+        .body{
+            padding-top: 20px;
+            display: flex;
+            
+            width: 100%;
+            height: auto;
+            background-color: #e8eaed;
+        }
+        .menu{
+            width: 100px;
+            margin-left: 190px;
+            color: #2c4869;
+        }
+        .menu1{
+            padding-top: 15px;
+        }
+        .menu2{
+            padding-top: 15px;
+        }
+        .menu3{
+            padding-top: 15px;
+        }
+        .menu4{
+            padding-top: 15px;
+        }
+        .menu5{
+            padding-top: 15px;
+        }
+        .menu6{
+            padding-top: 15px;
+        }
+        .menu7{
+            padding-top: 15px;
+        }
+        .menu8{
+            padding-top: 15px;
+        }
+
+
+        .profil{
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            margin-left: 40px;
+        }
+
+        .profil_img img{
+            object-fit:cover;
+        }
+
+        .profil_btn{
+            margin-top: 10px;
+        }
+
+        .profil_btn_styled {
+            border: 0;
+            line-height: 2.5;
+            padding: 0 20px;
+            width: 220px;
+            font-size: 1rem;
+            text-align: center;
+            color: #2c4869;
+            border-radius: 5px;
+            background-color: r#e8eaed;
+        }
+
+
+        .friends{
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            margin-left: 40px;
+            margin-top: 15px;
+            color: #2c4869;
+        }
+
+        .friends_text{
+            margin-bottom: 10px;
+        }
+
+        .friends_icon_row1{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            text-align: center;
+            color: #2c4869;
+        }
+
+        .friends_icon_row1 img{
+            object-fit:cover;
+            margin: 10px;
+        }
+
+        .friends_icon_row2{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            text-align: center;
+            color: #2c4869;
+        }
+
+        .friends_icon_row2 img{
+            object-fit:cover;
+            margin: 10px;
+        
+        }
+
+        .profil_info{
+            width: 650px;
+            height: 260px;
+            padding: 15px;
+            background-color: white;
+            margin-left: 15px;
+            border-radius: 5px;
+            
+            color: #2c4869;
+        }
+
+        .profil_info1{
+            
+            display: flex;
+            justify-content: space-between;
+        }
+
+        hr{
+            transform: scaleY(0.5);
+        }
+
+        .birthday{
+            margin-top: 20px;
+            display: flex;
+        }
+        .birthday_value{
+            margin-left: 60px;
+        }
+
+        .city{
+            margin-top: 5px;
+            display: flex;
+        }
+        .city_value{
+            margin-left: 60px;
+        }
+
+        .marital_status{
+            margin-top: 5px;
+            display: flex;
+        }
+        .marital_status_value{
+            margin-left: 60px;
+        }
+        
+        .work{
+            margin-top: 5px;
+            display: flex;
+        }
+        .work_value{
+            margin-left: 60px;
+        }
+
+        .web{
+            margin-top: 5px;
+            display: flex;
+        }
+        .web_value{
+            margin-left: 60px;
+        }
+
+        .dashbord{
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .value{
+            font-size:x-large;
+        }
+
+
+        .photos{
+            width: 650px;
+            height: 150px;
+            margin-top: 15px;
+            padding: 15px;
+            background-color: white;
+            margin-left: 15px;
+            border-radius: 5px;
+            
+            color: #2c4869;
+        }
+        .photos_text{
+            margin-top: 10px;
+        }
+
+        .photos_img{
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .post{
+            width: 650px;
+            height: 300px;
+            margin-top: 15px;
+            padding: 15px;
+            background-color: white;
+            margin-left: 15px;
+            border-radius: 5px;
+            
+            color: #2c4869;
+        }
+
+    
+
+        .post_user_img img{
+            height: 50px;
+            object-fit:cover;
+            border-radius: 50%;
+        }
+
+        .post_user{
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .post_user_text{
+            margin-top: 5px;
+            margin-left: 20px;
+        }
+        
+        .post_text{
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header_img">VK</div>
+        <div class="header_search">
+            <input type="search" / name="search" class="search" placeholder="Поиск">
+        </div>
+    </div>
+    <div class="body">
+        <div class="menu">
+            <div class="menu1">Моя страница</div>
+            <div class="menu2">Новости</div>
+            <div class="menu3">Сообщения</div>
+            <div class="menu4">Друзья</div>
+            <div class="menu5">Группы</div>
+            <div class="menu6">Фотографии</div>
+            <div class="menu7">Музыка</div>
+            <div class="menu8">Видео</div>
+        </div>
+        <div class="info1">
+
+            <div class="profil">
+                <div class="profil_img">
+                    <img src="https://cdn.sports24.kz/20240926/1a8310c4a37ccc84aef5be0e0ebbedca13ca0372cf58d07372275dfafef31f0b-880-495.jpg" width="220px" height="220px">
+                </div>
+                <div class="profil_btn">
+                    <button class="profil_btn_styled" type="button">Редактировать</button>
+                </div>
+            </div>
+            
+
+            <div class="friends">
+                <div class="friends_text">Друзья 1331</div>
+
+                <div class="friends_icon_row1">
+                    <div class="friends_icon1">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="50px">
+                        <div>Магжан</div>
+                    </div>
+                    <div class="friends_icon2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="50px">
+                        <div>Жанель</div>
+                    </div>
+                    <div class="friends_icon3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="50px">
+                        <div>Айзат</div>
+                    </div>
+                </div>
+                <div class="friends_icon_row2">
+                    <div class="friends_icon4">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="50px">
+                        <div>Елнур</div>
+                    </div>
+                    <div class="friends_icon5">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="50px">
+                        <div>Ерайдын</div>
+                    </div>
+                    <div class="friends_icon6">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="50px">
+                        <div>Абылхаир</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="info2">
+
+            <div class="profil_info">
+                <div class="profil_info1">
+                    <div>
+                        <div>llyas Zhuanyshev</div>
+                        <div>Life is good :)</div>
+                    </div>
+                    <div class="profil_status">Online</div>
+                </div>
+            
+                <hr color="#2c4869"/>
+
+                <div class="birthday">
+                    <div class="birthday_name">День рождения:</div>
+                    <div class="birthday_value">26 Mas 1989 r.</div>
+                </div>
+
+                <div class="city">
+                    <div class="city_name">Город:</div>
+                    <div class="city_value">Алматы</div>
+                </div>
+                
+                <div class="marital_status">
+                    <div class="marital_status_name">Marital status:</div>
+                    <div class="marital_status_value">женат</div>
+                </div>
+                
+                <div class="work">
+                    <div class="work_name">Место работы:</div>
+                    <div class="work_value">BITLAB Academy</div>
+                </div>
+
+                <div class="web">
+                    <div class="web_name">Веб-сайт:</div>
+                    <div class="web_value">http://www.zhuanyshev.kz/</div>
+                </div>
+
+                <hr color="#2c4869"/>
+
+                <div class="dashbord">
+                    <div class="friend">
+                        <div class="value">1 331</div>
+                        <div class="friend_name">друг</div>
+                    </div>
+
+                    <div class="subscriber">
+                        <div class="value">224</div>
+                        <div class="subscriber_name">подписчика</div>
+                    </div>
+
+                    <div class="photo">
+                        <div class="value">95</div>
+                        <div class="photo_name">фотографии</div>
+                    </div>
+
+                    <div class="video">
+                        <div class="value">969</div>
+                        <div class="video_name">видеозаписей</div>
+                    </div>
+
+                    <div class="audio">
+                        <div class="value">809</div>
+                        <div class="audio_name">аудиозаписей</div>
+                    </div>
+
+                    <div class="pages">
+                        <div class="value">140</div>
+                        <div class="pages_name">страниц</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="photos">
+                <div class="photos_text">Мои фотографии  95</div>
+
+                <div class="photos_img">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5f5be112e7f395dc08ef8e58/Lionel-Messi-celebrating-scoring-a-goal-in-the-2019-20-UEFA-Champions-League/1960x0.jpg?format=jpg&width=1440" width="152px">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5f5be112e7f395dc08ef8e58/Lionel-Messi-celebrating-scoring-a-goal-in-the-2019-20-UEFA-Champions-League/1960x0.jpg?format=jpg&width=1440" width="152px">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5f5be112e7f395dc08ef8e58/Lionel-Messi-celebrating-scoring-a-goal-in-the-2019-20-UEFA-Champions-League/1960x0.jpg?format=jpg&width=1440" width="152px">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5f5be112e7f395dc08ef8e58/Lionel-Messi-celebrating-scoring-a-goal-in-the-2019-20-UEFA-Champions-League/1960x0.jpg?format=jpg&width=1440" width="152px">
+                </div>
+            </div>
+
+
+            <div class="post">
+
+                <div class="post_user">
+                    <div class="post_user_img">
+                        <img src="https://cdn.sports24.kz/20240926/1a8310c4a37ccc84aef5be0e0ebbedca13ca0372cf58d07372275dfafef31f0b-880-495.jpg" width="50px">
+                    </div>
+                    <div class="post_user_text">
+                        <div>Ilyas Zhuanyshev</div>
+                        <div>5 апр в 17:42</div>
+                    </div>
+                </div>
+
+                <div class="post_text">
+
+                    Выдержка из интервью Льюиса Хэмилтона и Тото Вольффа: Вопрос: Себастьян долго ехал за вами - вы ожидали подобного? Льюис Хэмилтон: Да, Себастьян был очень близко.
+                    Если бы мы поменялись ролями, и Себастьян был впереди, то он, возможно, создал отрыв. У Ferrari был выше темп на UltraSoft. На втором отрезке уже мой темп был выше, но я остановился настолько рано, что не знал, выдержит ли резина. Я не хотел атаковать, чтобы сократить отставание, зная, что я в любом случае не смогу обогнать - я бы только испортил шины и упустил вторую позицию. Оказавшись позади Себастьяна, я постарался
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>
